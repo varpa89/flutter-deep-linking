@@ -16,6 +16,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(),
+      onGenerateRoute: (RouteSettings setting) {
+        print(setting);
+        closeWebView();
+      }
     );
   }
 }
@@ -34,7 +38,7 @@ class MyHomePage extends StatelessWidget {
           child: const Text('Launch Safari'),
           onPressed: () async {
             await launch(
-              'https://swarman.varpa89.ru/authentication_result',
+              'https://varpa89.github.io/flutter-deep-linking/',
               forceSafariVC: true,
             );
           },
