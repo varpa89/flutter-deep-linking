@@ -38,7 +38,7 @@ class MyHomePage extends StatelessWidget {
           child: const Text('Launch Safari'),
           onPressed: () async {
             await launch(
-              'https://varpa89.github.io/flutter-deep-linking/',
+              'https://swarman.varpa89.ru/oauth2/authorization/apple',
               forceSafariVC: true,
             );
           },
